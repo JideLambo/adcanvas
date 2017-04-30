@@ -1,0 +1,35 @@
+.clear {
+    clear: both;
+}
+
+.auto-margin {
+    margin: 0 auto;
+}
+
+.square-one {
+    width: 100%;
+}
+
+.square-two {
+    width: 80%;
+}
+
+.square-three {
+    width: 60%;
+}
+
+.square-four {
+    width: 40%;
+}
+
+.wrapper {
+    display: flex;
+    margin: 0 auto;
+    
+    @include screen(tiny) {
+        width: 94%;
+    }
+    @include screen(small) {
+        width: 94%;
+    }
+}

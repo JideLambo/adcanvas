@@ -1,0 +1,71 @@
+button,
+.button {
+    background-color: $yellow;
+    color: #000000;
+    border: $btn-border-color;
+    border-radius: 2px;
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    height: $button-height;
+    line-height: $button-height;
+    outline: none;
+    padding: 10px 1.5em;
+    position: relative;
+    text-decoration: none;
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transition-property: background, box-shadow, color, transform;
+    transition-property: background, box-shadow, color, transform;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover {
+        box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.15);
+        -webkit-transform: translateY(-1px);
+        transform: translateY(-1px);
+        text-decoration: none;
+    }
+    //Styling
+    &--rounded {
+        border-radius: 100px;
+    }
+    &--full {
+        text-align: center;
+        width: 100%;
+    }
+    
+    &.secondary-btn {
+        background-color: transparent;
+        border: 2px solid $yellow;
+        color: white;
+        
+        &:hover {
+            background-color: $yellow;
+            color: #000000;
+        }
+    }
+    
+    &.primary-btn {
+        color: #000000;
+    }
+    //Sizes
+    &--small {
+        height: $button-height-sm;
+        line-height: $button-height-sm;
+    }
+    &--large {
+        border-radius: 6px;
+        font-size: 16px;
+        height: $button-height-lg;
+        line-height: $button-height-lg;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}

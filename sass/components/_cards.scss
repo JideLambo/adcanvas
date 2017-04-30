@@ -1,0 +1,40 @@
+.grid {
+  background: #DDD;
+    margin: 30px auto;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+    
+    &:hover {
+      transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      -ms-transform: scale(1.1); /* IE 9 */
+    } 
+}

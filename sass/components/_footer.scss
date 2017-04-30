@@ -1,0 +1,73 @@
+.homepage-section__footer {
+    background-color: $footer-bg;
+    border-top: 1px solid #bdbdbd;
+    padding: 20px 0 0;
+    
+    .toTop {
+        
+        a.scroll-top {
+            text-transform: capitalize;
+            
+            i.fa {
+                margin-left: 10px;
+                font-size: 25px;
+                line-height: 22px;
+            }
+        }
+    }
+    footer {
+        
+        .share-social {
+            margin-bottom: 20px;
+            
+            span {
+                display: inline-block;
+            }
+            ul {
+                display: inline-block;
+                margin-left: 10px;
+                
+                li {
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
+        }
+        
+        .footer-menu {
+            border-top: 1px solid #bdbdbd;
+            border-bottom: 1px solid #bdbdbd;
+            padding: 30px 0;
+            
+            p, a {
+                font-size: 14px;
+            }
+        }
+        
+        .footer-bottom {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background: $navBg;
+            .footer-logo {
+                display: inline-block;
+                margin-right: 10px;
+                
+                .footer-img {
+                    font-weight: 700;
+                    text-indent: -9999px;
+                    overflow: hidden;
+                    background: url(../../dist/img/adcanvasLogo.png) no-repeat;
+                    width: 220px;
+                    height: 34px;
+                    margin-top: 10px;
+                    float: left;
+                }
+            }
+            .copyright {
+                display: inline-block;
+                color: #fff;
+                opacity: 0.6;
+            }
+        }
+    }
+}

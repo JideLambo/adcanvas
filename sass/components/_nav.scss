@@ -1,0 +1,93 @@
+nav.navbar {
+    background: $navBg;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(../../dist/img/adcanvasLogo.png) no-repeat;
+    width: 220px;
+    height: 34px;
+    margin-top: 10px;
+    
+    @include screen(tiny) {
+        margin: 10px 0 0 12px;
+    }
+    @include screen(small) {
+        margin: 10px 0 0 12px;
+    }
+}
+
+.navbar-toggle {
+    background-color: $yellow;
+    
+    .icon-bar {
+        
+         @include screen(tiny) {
+            border: 1px solid black;
+        }
+        @include screen(small) {
+            border: 1px solid black;
+        }
+        
+    }
+}
+.navbar-nav {
+    font-size: 1.5rem;
+     float: right;   
+    
+    @include screen(tiny) {
+        float: none;
+    }
+    @include screen(small) {
+        float: none;
+    }
+    
+    li {
+        a {
+            color: white;
+            opacity: 0.8;
+            
+            @include screen(tiny) {
+                text-align: center;
+            }
+            @include screen(small) {
+                text-align: center;
+            }
+            
+            &:hover {
+                opacity: 1;
+                background-color: transparent;
+            }
+            &:focus {
+                opacity: 1;
+                background-color: transparent;
+            }
+        }
+        a.button {
+            margin-top: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: #000000;
+            opacity: 1;
+            
+            @include screen(tiny) {
+                width: 80%;
+                margin: 0 auto;
+            }
+            @include screen(small) {
+                width: 80%;
+                margin: 0 auto;
+            }
+            
+            &:hover {
+                
+                background-color: $yellow;
+            }
+        }
+    }
+}

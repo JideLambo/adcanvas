@@ -1,0 +1,71 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    @include screen(small) {
+        font-size: 58%;
+    }
+}
+
+body {
+    color: $body-text-color;
+    -webkit-font-smoothing: antialiased;
+    font-family: $regular-font;
+    font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #003767;
+}
+
+.all-font-thin {
+    font-weight: 100;
+}
+
+.all-font-normal {
+    font-weight: normal;
+}
+
+.all-font-bold {
+    font-weight: bold;
+}
+
+.all-text-center {
+    text-align: center;
+}
+
+.all-text-left {
+    text-align: left;
+}
+
+.all-text-right {
+    text-align: right;
+}
+
+//.global-u-body-title {
+//    font-size: 1.7rem;
+//}
+//
+//.global-u-body-text {
+//    font-size: 1.5rem;
+//    line-height: 1.3;
+//}
+//
+//.global-u-body-excerpt {
+//    font-size: 1.7rem;
+//    line-height: 1.3;
+//}
+//
+//.global-u-link-inverted {
+//    color: white;
+//    &:hover {
+//        text-decoration: underline;
+//    }
+//}
